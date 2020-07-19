@@ -1,0 +1,23 @@
+public class Cat extends Participants {
+    private int maxJump = 15;
+    private int maxRun =8;
+
+    public boolean jump(int height) {
+        if (maxJump > height) {
+            System.out.println("Кот перепрыгнул...\n");
+            return true;
+        } else {
+            System.out.println("Кот не перепрыгнул...\n");
+        }
+        return false;
+    }
+    public boolean run(int height) {
+        if (maxRun > height) {
+            System.out.println("Кот пробежал...\n");
+            return true;
+        } else {
+            System.out.println("Кот не добежал...\n");
+        }
+        return false;
+    }
+}
