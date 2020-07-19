@@ -1,0 +1,9 @@
+public abstract class Participants {
+    boolean jump(int height) {
+        return false;
+    }
+
+    boolean run(int distance) {
+        return false;
+    }
+}
