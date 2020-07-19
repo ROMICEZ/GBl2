@@ -1,0 +1,24 @@
+public class RunTrack extends Obstacle {
+    private int distance = 8;
+
+    public int getDistance() {
+        return distance;
+    }
+    public boolean toDo(Obstacle obstacle) {
+        if (obstacle.run(getDistance())) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    protected boolean run(int distance) {
+        return false;
+    }
+
+    @Override
+    protected boolean jump(int distance) {
+        return false;
+    }
+}
+
