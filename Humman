@@ -1,0 +1,23 @@
+public class Human extends Participants {
+    private int maxJump = 5;
+    private int maxRun =10;
+
+    public boolean jump(int height) {
+        if (maxJump > height) {
+            System.out.println("Человек перепрыгнул...\n");
+            return true;
+        } else {
+            System.out.println("Человек не перепрыгнул...\n");
+        }
+        return false;
+    }
+    public boolean run(int height) {
+        if (maxRun > height) {
+            System.out.println("Человек пробежал...\n");
+            return true;
+        } else {
+            System.out.println("Человек не добежал...\n");
+        }
+        return false;
+    }
+}
