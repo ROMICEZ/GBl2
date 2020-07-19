@@ -1,0 +1,6 @@
+public abstract class Obstacle {
+    public boolean toDo(Participants participants) {return true;}
+    protected abstract boolean run(int distance);
+
+    protected abstract boolean jump(int height);
+}
