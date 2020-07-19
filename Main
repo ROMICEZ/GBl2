@@ -1,0 +1,25 @@
+public class Main {
+    public static void main(String[] args) {
+        Human human =  new Human();
+        Cat cat = new Cat();
+        Robot robot = new Robot();
+
+        Human[] humans = {human};
+        Cat[] cats = {cat};
+        Robot[] robots = {robot};
+
+        for (Human h : humans ) {
+            h.jump(10);
+            h.run(1);
+        }
+
+        for (Cat c : cats) {
+            c.jump(5);
+            c.run(10);
+        }
+        for (Robot r : robots) {
+            r.jump(5);
+            r.run(15);
+        }
+    }
+}
