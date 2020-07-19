@@ -1,0 +1,23 @@
+public class Wall extends Obstacle {
+    private int height = 2;
+
+    public int getHeight() {
+        return height;
+    }
+    public boolean toDo(Obstacle obstacle) {
+        if (obstacle.run(getHeight())) {
+            return true;
+        }
+        return false;
+    }
+    @Override
+    protected boolean run(int distance) {
+        return false;
+    }
+
+    @Override
+    protected boolean jump(int distance) {
+        return false;
+    }
+}
+
